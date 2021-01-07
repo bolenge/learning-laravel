@@ -26,6 +26,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/photo">Upload Image</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/email">Emailing</a>
+                    </li>
                 </ul>
             </div>
         </nav>
