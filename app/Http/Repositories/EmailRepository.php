@@ -1,9 +1,9 @@
 <?php
-    namespace App\Repositories;
+    namespace App\Http\Repositories;
 
     use App\Models\Email;
 
-    class EmailRepository {
+    class EmailRepository implements EmailRepositoryInterface {
 
         protected $email;
 

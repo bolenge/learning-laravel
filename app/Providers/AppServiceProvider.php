@@ -15,7 +15,9 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app->bind(
             'App\Http\Gestion\PhotoGestionInterface',
-            'App\Http\Gestion\PhotoGestion'
+            'App\Http\Gestion\PhotoGestion',
+            'App\Http\Repositories\EmailRepository',
+            'App\Http\Repositories\EmailRepositoryInterface'
         );
     }
 
