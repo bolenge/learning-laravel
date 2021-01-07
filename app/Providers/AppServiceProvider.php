@@ -13,11 +13,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        
+        $this->app->bind(
+            'App\Http\Repositories\EmailRepositoryInterface',
+            'App\Http\Repositories\EmailRepository',
+        );
+
         $this->app->bind(
             'App\Http\Gestion\PhotoGestionInterface',
             'App\Http\Gestion\PhotoGestion',
-            'App\Http\Repositories\EmailRepository',
-            'App\Http\Repositories\EmailRepositoryInterface'
         );
     }
 
