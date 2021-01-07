@@ -4,7 +4,9 @@
     <br>
     <div class="offset-4 col-sm-4">
 		<div class="card card-info">
-			<div class="card-heading">Inscription à la lettre d'information</div>
+			<div class="card-header">
+                <h5 class="card-title text-center">Inscription à la lettre d'information</h5>
+            </div>
 			<div class="card-body"> 
                 <form action="{{ route('storeEmail') }}" method="POST">
                     {!! csrf_field() !!}
