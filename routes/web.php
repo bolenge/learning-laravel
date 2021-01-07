@@ -28,4 +28,4 @@ Route::post('/photo', 'PhotoController@postForm');
 
 // Emailing routes
 Route::get('/email', 'EmailController@getForm');
-Route::post('/email', ['uses' => 'EmailController@postFrom', 'as' => 'storeEmail']);
+Route::post('/email', ['uses' => 'EmailController@postForm', 'as' => 'storeEmail']);
